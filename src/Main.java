@@ -7,7 +7,7 @@ public class Main {
         student1.sClass = 12;
         student1.batch  = "2018";
         student1.scoreData = new Score[] {
-                new Score("Physics", 45),
+                new Score("Physics", 55),
                 new Score("Biology", 90),
                 new Score("Math", 70),
                 new Score("Chemistry", 60),
@@ -49,9 +49,11 @@ public class Main {
                 new Score("Physics", 90),
                 new Score("Biology", 70),
                 new Score("Math", 60),
-                new Score("Chemistry", 49),
+                new Score("Chemistry", 59),
                 new Score("Computer Science", 91)
         };
+
+        // ----- Student 5 -----
         Students student5 = new Students();
         student5.name   = "Naruto Uzumaki";
         student5.sClass = 12;
@@ -64,12 +66,25 @@ public class Main {
                 new Score("Computer Science", 65)
         };
 
+        // ----- Student 6 -----
+        Students student6 = new Students();
+        student6.name   = "Sasuke Uchiha";
+        student6.sClass = 11;
+        student6.batch  = "2018";
+        student6.scoreData = new Score[] {
+                new Score("Physics", 70),
+                new Score("Biology", 89),
+                new Score("Math", 58),
+                new Score("Chemistry", 69),
+                new Score("Computer Science", 90)
+        };
 
-        Students[] allStudents = { student1, student2, student3,student4,student5 };
+
+        Students[] allStudents = { student1, student2, student3,student4,student5,student6 };
 
         System.out.println("-------All Students Percentage-------");
         for (int i = 0; i < allStudents.length; i++ ){
-            System.out.println(allStudents[i].name+":"+allStudents[i].percentage()+"%");
+            System.out.println("    "+allStudents[i].name+":"+allStudents[i].percentage()+"%");
         }
         System.out.println("-----------------------------");
 

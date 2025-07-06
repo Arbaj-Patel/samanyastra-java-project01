@@ -15,7 +15,7 @@ public class ClassAverageCalculator {
         for (int cls = 1; cls <= 12; cls++) {
             if (classCounts[cls] > 0) {
                 double avg = classTotals[cls] / classCounts[cls];
-                System.out.printf("Class %d: %.2f%%\n", cls, avg);
+                System.out.printf("    "+"Class %d: %.2f%%\n", cls, avg);
             }
         }
     }
